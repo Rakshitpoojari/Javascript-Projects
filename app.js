@@ -15,7 +15,7 @@
 
     equal.addEventListener('click', function() {
         if (screen.value === '') {
-            screen.value = "Please Enter";
+            screen.value = "Plea   se Enter";
         } else {
             try {
                 let answer = math.evaluate(screen.value);
