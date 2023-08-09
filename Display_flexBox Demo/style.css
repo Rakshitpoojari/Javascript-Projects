@@ -54,3 +54,8 @@ body {
     align-self: center;
     order: 2;
 }
+
+.item-2 {
+    align-self: center;
+    order: 4;
+}
