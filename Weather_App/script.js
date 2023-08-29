@@ -12,7 +12,11 @@ const weatherIcons = {
   clear: "images/clear.png",
   rain: "images/rain.png",
   drizzle: "images/drizzle.png",
+<<<<<<< HEAD
   mist: "images/Mist.png",
+=======
+  mist: "images/Mist.png"
+>>>>>>> 3b992727db222af15089e662500d3ddceaa19b2b
 };
 
 let debounceTimer;
@@ -30,10 +34,17 @@ async function checkWeather(city) {
   try {
     const apiKey = "f04d54732055581e9c51ed28d4d78937"; // Replace with your API key
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+<<<<<<< HEAD
 
     const response = await fetch(apiUrl);
     const data = await response.json();
 
+=======
+  
+    const response = await fetch(apiUrl);
+    const data = await response.json();
+  
+>>>>>>> 3b992727db222af15089e662500d3ddceaa19b2b
     if (response.status === 404) {
       showError("City not found");
     } else {
@@ -51,7 +62,11 @@ function updateWeatherInfo(data) {
   tempElement.textContent = Math.round(data.main.temp) + "°C";
   humidityElement.textContent = data.main.humidity + "%";
   windElement.textContent = data.wind.speed + "km/h";
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 3b992727db222af15089e662500d3ddceaa19b2b
   const weatherMain = data.weather[0].main.toLowerCase();
   weatherIcon.src = weatherIcons[weatherMain] || "default.png";
 }
