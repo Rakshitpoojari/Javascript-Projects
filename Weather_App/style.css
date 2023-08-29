@@ -1,6 +1,6 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
 }
@@ -13,12 +13,12 @@ body {
 }
 
 .card {
-    border: 1px;
+    /* border: 1px; */
     width: 90%;
     /* height: fit-content; */
     max-width: 470px;
     background-image: linear-gradient(135deg,#2d3634,#5b548a);
-    color: #3d2323;
+    color: #e7d9d9;
     margin: 100px auto 0;
     border-radius: 20px;
     padding: 40px 35px;
@@ -62,3 +62,43 @@ body {
     width: 16px;
 }
 
+.weather-icon {
+    width: 170px;
+    margin-top: 30px;
+}
+
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+
+
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+
+.col {
+    display: flex;
+    align-items: center;
+    /* text-align: left; */
+}
+
+.col img {
+    width: 40px;
+    margin-right: 10px;
+} 
+
+.humidity, .wind {
+    font-size: 28px;
+    margin-top: -6px;
+}
