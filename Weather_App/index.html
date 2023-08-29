@@ -17,6 +17,9 @@
         />
         <button><img src="images/search.png" alt="search" /></button>
       </div>
+      <div class="error">
+        <p>Invalid City Name</p>
+      </div>
       <div class="weather">
         <img src="images/rain.png" alt="weather-icon" class="weather-icon" />
         <h1 class="temp">22°C</h1>
@@ -40,15 +43,21 @@
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
 
-    <script>
+    <!-- <script>
       const apiKey = "f04d54732055581e9c51ed28d4d78937";
       const searchBox = document.querySelector(".search input");
       const searchBtn = document.querySelector(".search button");
 
       async function checkWeather(city) {
         const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-
+        if(response.status == 404)
+        {
+            document.querySelector(".error").style.display="block";
+            document.querySelector(".weather").style.display="none";
+        }
+        else {
         const response = await fetch(apiUrl);
         const data = await response.json();
         const weatherIcon=document.querySelector(".weather-icon");
@@ -78,7 +87,10 @@
         else if(data.weather[0].main == "Mist"){
             weatherIcon.src="images/Mist.png";
         }
-        
+    }
+
+        document.querySelector(".weather").style.display="block";
+
       }
 
      
@@ -88,6 +100,6 @@
       });
 
       checkWeather();
-    </script>
+    </script> -->
   </body>
 </html>
