@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    /* background-image: linear-gradient(125 deg,#F3904F, #3B4371); */
+}
+
+body {
+    font-family: "Ubuntu",sans-serif;
+    height: 100vh;
+    /* place-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #4009a0d3; */
+    background-image: linear-gradient(125deg, #de6161, #2657eb);
+    /* You can add other background properties here */
+    background-size: cover; /* This scales the background image to cover the entire body */
+    background-attachment: fixed;
+    
+}
+
+.profile-card {
+    max-width: 370px;
+    width: 100%;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    /* place-content: center; */
+    background: #fff;
+    border: 5px solid #F3904F; /* Initial border style and color */
+    animation: shimmer 4s infinite;
+    box-shadow: 0 5px 10px rgb(0,0,0,0.6);
+    border-radius: 25px;
+    padding: 25px;
+    position: relative;
+}
+
+.image {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    /* align-items: center; */
+    border-radius: 50% ;
+    background-color: rgb(11, 11, 51);
+    padding: 3px;
+}
+
+.image .profile-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    /* justify-content: center;
+    align-items: center; */
+    border: 3px solid #eceef1;
+    /* align-items: center; */
+}
+
+.profile-card::before {
+    content: '';
+    position: absolute;
+    height: 36%;
+    width: 100%;
+    background-color: #1748da;
+}
+.profile-card .text-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.7rem;
+    color: #333;
+}
+
+.text-data .name {
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.profile-card .media-buttons {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.7rem;
+    align-items: center;
+}
+
+.media-buttons .link {
+    height: 34px;
+    width: 34px;
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    border-radius: 50%;
+    margin: 5px 8px;
+    background-color: #4070f4;
+
+
+
+}
+
+.profile-card .buttons {
+    align-items: center;
+    margin-top: 15px;
+    /* width: 200px; */
+}
+
+
+.buttons .button {
+    width: 100px;
+    /* height: 200px; */
+    padding: 10px;
+    /* margin: 15px; */
+    color: #eceef1;
+    background-color: #c46323;
+    border: none;
+    border-radius: 24px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+@keyframes shimmer {
+    0% {
+      border-color: #F3904F; /* Starting color of the border */
+    }
+    20% {
+      border-color: #3f4ea1; /* Shimmering color of the border */
+    }
+    40% {
+      border-color: #0f4919; /* Shimmering color of the border */
+    }
+    60% {
+      border-color: #cc1c15; /* Ending color of the border */
+    }
+    80% {
+      border-color: #dd44d5b0; /* Ending color of the border */
+    }
+    100% {
+      border-color: #c46323; /* Ending color of the border */
+    }
+  }

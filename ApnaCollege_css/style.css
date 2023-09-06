@@ -3,4 +3,19 @@
     padding: 0%;
     box-sizing: border-box;
 }
+body{
+    background-color: darkcyan;
+}
+h1 {
+    color: rgb(17, 136, 13) !important;
+    margin: 30px;
+    border: 1px dashed black;
+    padding: 30px;
+    text-align: center;
+    /* display: block; */
+    background-color: rgb(233, 136, 103);
+}
 
+p {
+    color: rgb(15, 6, 9);
+}
