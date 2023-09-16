@@ -24,3 +24,15 @@ let name='Rakshit'
 let ages;
 let score=11;
 let player1score=null;
+
+
+
+// Refernce Objects types
+const arr=[1,2,3,4,5]
+const output=arr
+console.log(output,typeof arr)
+const obj={
+    name:'rrrr',
+    age:22
+}
+console.log(obj,typeof arr)
